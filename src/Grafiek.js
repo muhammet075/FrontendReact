@@ -120,7 +120,7 @@ function Grafiek() {
         return update(gefilterd);
       }
       update(dataNederland);
-      //alle data terug updaten
+      //alle data terug uppdaten
     });
   };
 
