@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import "./App.css";
 import * as d3 from "d3";
 
 function Grafiek() {
   useEffect(() => {
-    fetchItems();
+    fethcen();
   }, []);
 
-  const fetchItems = async () => {
+  const fethcen = async () => {
     const data = await fetch(
       "https://countriesnow.space/api/v0.1/countries/population"
     );
@@ -16,25 +16,34 @@ function Grafiek() {
 
     const nieuwItems = items.data[185].populationCounts;
 
-    const dataNederland = nieuwItems;
-
     let nieuwInwoner = [];
+    let nieuwJaar = [];
 
-    for (let i = 0; i < dataNederland.length; i++) {
+    for (let i = 30; i < nieuwItems.length; i++) {
       //afronden naar 3 getallen
-      var afronden = dataNederland[i].value.toString().slice(0, -4);
-
+      var afronden = nieuwItems[i].value.toString().slice(0, -4);
       //een komma toevoegen na de miljoen getal
       var decimalen = afronden.slice(0, 2) + "." + afronden.slice(2);
-
       //string omzetten naar int
-      var nieuwInnwoner = Number(decimalen);
-
+      var nieuwGetal = Number(decimalen);
       //pushen naar nieuwe array
-      nieuwInwoner.push(nieuwInnwoner);
+      nieuwInwoner.push(nieuwGetal);
+
+      nieuwJaar.push(nieuwItems[i].year);
+
+      var dataNederland = [];
+
+      //loopen en nieuwe objecten aanmaken voor in de nieuwe array voor d3
+      for (var x = 0; x < nieuwInwoner.length; x++) {
+        dataNederland[x] = {
+          value: nieuwInwoner[x],
+          year: nieuwJaar[x],
+        };
+      }
     }
 
-    console.log(nieuwInwoner);
+    //nieuwe arrray met afgeronde inwoners console loggen
+    console.log(dataNederland);
 
     //groottes van de margin width en height definieren
     const margin = { top: 80, bottom: 0, left: 150, right: 0 };
@@ -106,7 +115,7 @@ function Grafiek() {
       const checked = d3.select(this).property("checked");
       if (checked === true) {
         // inwoners onder 16.4 miljoen verdwijnen
-        const gefilterd = dataNederland.filter((d) => d.value > 16400000);
+        const gefilterd = dataNederland.filter((d) => d.value > 16.4);
 
         return update(gefilterd);
       }
@@ -117,10 +126,9 @@ function Grafiek() {
 
   return (
     <div className='inhoud'>
-      <h1>Grafiek</h1>
       <article id='grafiekNL'>
         <h2>Inwoners Nederland</h2>
-        <section class='filter'>
+        <section className='filter'>
           <label>
             <input type='checkbox' id='FilterJaren' />
             Laatste 10 jaar

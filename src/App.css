@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(201, 201, 201);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h1,
@@ -8,17 +8,32 @@ h3,
 h4,
 h5 {
   margin: 0px;
+  font-weight: 200;
+}
+
+header {
+  width: 100%;
+  padding: 20px 0 5px 0;
+  text-align: center;
+  background-color: #4278c7;
+  color: #ffff;
+}
+
+header h1 {
+  font-size: 1.5em;
+  margin: auto;
+  padding: 0 0 15px 0;
+  border-bottom: 1px solid #729cd9;
 }
 
 nav {
-  width: 100%;
-  background-color: blue;
   padding: 5px;
 }
 
 nav a {
   color: #ffff;
   text-decoration: none;
+  font-size: 1.6em;
 }
 
 nav ul {
@@ -28,7 +43,7 @@ nav ul {
 }
 
 nav ul li {
-  padding: 0 20px;
+  padding: 0 40px;
 }
 
 .inhoud {
@@ -36,5 +51,23 @@ nav ul li {
   max-width: 80%;
   padding: 10px;
   text-align: center;
-  background-color: #ffff;
+}
+
+rect {
+  fill: steelblue;
+  fill-opacity: 0.8;
+}
+rect:hover {
+  fill-opacity: 1;
+}
+.axis {
+  font-size: smaller;
+}
+
+.filter {
+  margin-top: 30px;
+}
+
+#grafiekNL svg {
+  margin-top: 0px;
 }

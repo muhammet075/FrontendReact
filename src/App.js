@@ -13,6 +13,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/nederland' element={<Nederland />} />
+          <Route path='/nederland/:cities' element={<Nederland />} />
           <Route path='/grafiek' element={<Grafiek />} />
         </Routes>
       </div>
@@ -22,7 +23,7 @@ function App() {
 
 const Home = () => (
   <div className='inhoud'>
-    <h1>Home</h1>
+    <h2>Home</h2>
   </div>
 );
 
