@@ -114,7 +114,7 @@ function Grafiek() {
     d3.select("#FilterJaren").on("change", function () {
       const checked = d3.select(this).property("checked");
       if (checked === true) {
-        // inwoners onder 16.4 miljoen verdwijnen
+        // inwoners onnder 16.4 miljoen verdwijnen
         const gefilterd = dataNederland.filter((d) => d.value > 16.4);
 
         return update(gefilterd);

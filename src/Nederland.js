@@ -12,7 +12,7 @@ function Nederland() {
 
     const items = await data.json();
     const nederlandseSteden = items.data[213];
-
+    //test
     console.log(nederlandseSteden.cities);
   };
 
