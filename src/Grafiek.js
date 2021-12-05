@@ -33,7 +33,7 @@ function Grafiek() {
 
       var dataNederland = [];
 
-      //loopen en nieuwe objecten aanmaken voor in de nieuwe array voor d3
+      //loopen en nieuwe objecten aanmaken voor isn de nieuwe array voor d3
       for (var x = 0; x < nieuwInwoner.length; x++) {
         dataNederland[x] = {
           value: nieuwInwoner[x],
