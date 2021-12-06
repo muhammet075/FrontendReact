@@ -5,6 +5,7 @@ Voor dit vak heb ik met React een client-side app met JavaScript gemaakt dat dat
 * React
 * React-Router
 * React-Router-Dom
+* Create-react-app-buildpack
 * D3 Data-Driven Documents
 * Font-Awesome
 * Google Fonts
