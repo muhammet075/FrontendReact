@@ -28,7 +28,7 @@ Met de data die ik verwerkt heb in de app heb ik opgehaald met de API van https:
 
 2. Navigeer naar het project<br/>
 ```
-  cd FrontendApplications
+  cd FrontendReact
 ```
 
 3. Installeer NPM<br/>
