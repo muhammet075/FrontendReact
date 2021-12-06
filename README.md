@@ -1,5 +1,6 @@
 # Frontend Applications
 Voor dit vak heb ik met React een client-side app met JavaScript gemaakt dat data rendert.
+<br/>
 
 ## Dependencies 🖇   
 * React
