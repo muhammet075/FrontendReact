@@ -135,6 +135,14 @@ function Grafiek() {
           </label>
         </section>
       </article>
+      <div className='infotekst'>
+        <p>
+          Jaren <i class='fas fa-long-arrow-alt-right'></i>
+        </p>
+        <p>
+          x aantal miljoen <i class='fas fa-long-arrow-alt-right'></i>
+        </p>
+      </div>
     </div>
   );
 }

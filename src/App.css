@@ -210,3 +210,19 @@ footer p {
 .plaatsenLijst li a {
   text-decoration: none;
 }
+
+.infotekst {
+  position: relative;
+  color: #0057b9;
+}
+.infotekst p:first-child {
+  position: absolute;
+  top: -700px;
+  left: 170px;
+  transform: rotate(270deg);
+}
+.infotekst p:last-child {
+  position: absolute;
+  top: -1000px;
+  left: 320px;
+}
