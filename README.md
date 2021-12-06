@@ -48,7 +48,7 @@ Lees de <a href="https://github.com/muhammet075/FrontendReact/wiki">wiki</a> voo
 <br/><br/>
 
 ## Deployment 🚀
-Bekijk de app live op https://frontendapplications.herokuapp.com/
+Bekijk de app live op https://frontendapps-react.netlify.app/
 <br/><br/>
 
 ## Autheur 🖊
