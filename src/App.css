@@ -218,7 +218,7 @@ footer p {
 .infotekst p:first-child {
   position: absolute;
   top: -700px;
-  left: 170px;
+  left: 80px;
   transform: rotate(270deg);
 }
 .infotekst p:last-child {
