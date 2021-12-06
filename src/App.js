@@ -16,9 +16,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/nederland' element={<Nederland />} />
-          <Route path='/nederland/:cities' element={<Nederland />} />
           <Route path='/grafiek' element={<Grafiek />} />
-          <Route path='/svg' element={<Svg />} />
         </Routes>
         <Footer />
       </div>
