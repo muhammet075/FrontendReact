@@ -5,6 +5,7 @@ Voor dit vak heb ik met React een client-side app met JavaScript gemaakt dat dat
 * React
 * React-Router
 * React-Router-Dom
+* Create-react-app-buildpack
 * D3 Data-Driven Documents
 * Font-Awesome
 * Google Fonts
@@ -28,7 +29,7 @@ Met de data die ik verwerkt heb in de app heb ik opgehaald met de API van https:
 
 2. Navigeer naar het project<br/>
 ```
-  cd FrontendApplications
+  cd FrontendReact
 ```
 
 3. Installeer NPM<br/>
